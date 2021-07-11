@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+}
+
+button {
+   border: none;
+}
+
+body {
+   background-color: #E3F6F5;
+   font-family: 'Roboto';
+   font-weight: 700;
+}
+
+html, body {
+   height: 100%;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100%;
+}
+
+.calculator {
+   width: 500px;
+}
+
+.input {
+   background-color: #272343;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding-right: 20px;
+   padding-left: 20px;
+   color: #fff;
+   font-size: 40px;
+   border-radius: 5px;
+}
+
+.panel {
+   margin-top: 20px;
+   width: 500px;
+   border-radius: 5px;
+   height: 425px;
+   background: #BAE8E8;
+}
+
+.keys {
+   width: 460px;
+   height: 460px;
+   margin: auto;
+   padding-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(4, 100px);
+   grid-template-rows: repeat(4, 60px);
+   text-align: center;
+   gap: 20px;
+   justify-items: center;
+}
+
+.key {
+   background: #fff;
+   color: #272343;
+   border-radius: 5px;
+   height: 60px;
+   width: 100px;
+   font-size: 25px;
+   cursor: pointer;
+   font-family: 'Roboto';
+   font-weight: 700;
+
+   &:active {
+      background: rgba(#fff, .7);
+   }
+}
+
+#reset {
+   margin-left: 120px;
+   background: #272343;
+   font-size: 22px;
+   color: #fff;
+   
+   &:active {
+      background: rgba(#272343, .7);
+   }
+}
+
+#equal {
+   margin-left: 360px;
+   background: #272343;
+   color: #fff;
+
+   &:active {
+      background: rgba(#272343, .7);
+   }
+}
+
+#del {
+   background: #272343;
+   font-size: 22px;
+   color: #fff;
+
+   &:active {
+      background: rgba(#272343, .7);
+   }
+}
+
+
+.panel__bottom-btn {
+   color: hsl(223, 31%, 20%);
+   border-radius: 5px;
+   height: 60px;
+   width: 220px;
+   font-size: 25px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
